@@ -18,7 +18,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser()
     parser.add_argument("--model_name", type=str, default="TranIU")
     parser.add_argument("--num_epochs", type=int, default=20)
-    parser.add_argument("--lr", type=float, default=1e-5)
+    parser.add_argument("--lr", type=float, default=5e-5)
     parser.add_argument("--data_dir", type=str, default="./Data")
     parser.add_argument("--save_path", type=str, default="./models/TranIU/")
     parser.add_argument("--start_epoch", type=int, default=0)
@@ -67,3 +67,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
